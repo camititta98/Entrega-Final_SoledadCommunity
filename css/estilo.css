@@ -1,0 +1,370 @@
+/*  comentario de css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+*{
+    margin:0 auto;
+    width:100%;
+    max-width: 1200px;
+    overflow-x: hidden; 
+    
+}
+body{
+    background-image: url(../assets/img/confeti.jpg);
+    background-repeat: repeat-x;
+    width: 100%;
+}
+.LogoYMenu{
+    position: fixed;
+}
+
+#logo{
+    background-color: yellow;
+    width: 100%;
+    height: 3em;
+    
+    
+}
+#logo h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Playfair Display', serif ;
+    /*margin-top: 0;*/
+    background-color: yellow;
+    width: 100%;
+    height: 3em;
+    position: fixed;
+    font-size: 3em;
+    
+
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: yellow;
+    position: fixed;
+    margin-top: 4em;
+    
+}
+
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+    
+}
+
+header nav ul li{
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    /*list-style-type: none ;*/
+    text-decoration: none;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+}
+nav ul li a {
+    text-decoration: none;
+ 
+}
+
+/* CSS DE LOS TITULOS */
+.titulosPaginas{
+    margin-top: 6em;
+    font-family: 'Playfair Display', serif ;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+    
+
+#encabezado {
+
+    margin-top:7em;
+    
+}
+
+/* CSS DE LA HOME*/
+
+#presentacion {
+    margin-top: 11em;
+    background-color: white;
+
+
+}
+#presentacion h2{
+    font-family: 'Playfair Display', serif ;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-top: 0.5em;
+
+}
+#presentacion p {
+    font-family:'Noto Sans', sans-serif ;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+#presentacion img {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    width: 24em;
+    height: 24em;
+}
+#presentacion iframe {
+    border-radius: 1em;
+    width: 90%;
+    border: 3em;
+    margin-left: 8em;
+    margin-bottom: 1em;
+    margin-top: 3em;
+    text-align: center;
+    width: 60em;
+    height: 40em;
+
+}
+
+
+
+    /*CSS DE CLIENTES*/
+
+#contenedorClientes{
+
+    margin-top: 1em;
+}
+
+#cardCliente{
+   /* background-color: rgb(255, 221, 0);*/
+    margin-left: 11em;
+    margin-top: 3em;
+    margin-right: 5em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 18em;
+    height: 18em;
+   
+    margin-bottom: 1em;
+}
+
+#cardCliente img {
+    width: 16em;
+    height: 16em;
+    
+}
+#cardCliente h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+ /*  CSS DE SERVICIOS */
+ 
+#contenedorServicios{
+    margin-top: 1em;
+
+}
+
+#servicio{
+    background-color: rgb(255, 221, 0);
+    margin-left: 11em;
+    margin-top: 3em;
+    margin-right: 5em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 56em;
+    height: 12em;
+    border-radius: 2em;
+    margin-bottom: 1em;
+}
+
+#servicio h3{
+    font-family:'Noto Sans', sans-serif;
+    text-align:left;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+#servicio ul li {
+    font-family:'Noto Sans', sans-serif; 
+    color: rgb(83, 82, 82);
+    margin-left: 0em;
+    margin-top: 1em;
+    /*text-align: center;*/
+}
+
+
+
+/* CSS DE FAQ*/
+
+
+#contenedorFAQ{
+   margin-left: 1em;
+   
+   
+}
+#preguntas{
+    background-color: rgb(255, 221, 0);
+    margin-left: 11em;
+    margin-top: 3em;
+    margin-right: 5em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 18em;
+    height: 16em;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    
+}
+#preguntas h3{
+    font-family:'Noto Sans', sans-serif;
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+
+}
+#preguntas p {
+    font-family:'Noto Sans', sans-serif; 
+    color: rgb(83, 82, 82);
+    margin-left: 0em;
+    margin-top: 0.8em;
+    text-align: center;
+  
+}
+
+
+/*  CSS DE CONTACTANOS */
+.formulario{
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110%;
+    width: 90%;
+    overflow: auto;
+    
+   /* border-color: yellow;
+    border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
+    border-style: solid;*/
+    font-size: 1em;
+    /*border-bottom: 4em;*/
+    /*margin-bottom: 2em;*/
+    background-color: white; 
+    
+
+}
+.formulario input{
+    width: 95%;
+    overflow: hidden;
+    border-color: yellow;
+    border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
+    border-style: solid;
+    height: 2.5em;
+  
+}
+.formulario select{
+    width: 95%;
+    overflow: hidden;
+    border-color: yellow;
+    border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
+    border-style: solid;
+    height: 2.5em;
+}
+.formulario textarea{
+    width: 95%;
+    overflow: hidden;
+    border-color: yellow;
+    border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
+    border-style: solid;
+}
+.formulario fieldset{
+    width: 95%;
+    overflow: hidden;
+    border-color: yellow;
+    border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
+    border-style: solid;
+}
+
+.botones{
+    margin-top: 1em;
+    display: inline-flex;
+    justify-content:space-around ;
+}
+.botones input{
+    margin-top: 1em;
+    display: inline-flex;
+    justify-content:space-around ;
+    width: 8em;
+    height: 2em;
+    background-color: rgb(87, 85, 85);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+}
+
+#mapa{
+    width: 90%;
+    border: 3em;
+    border-color: yellow;
+    margin-bottom: 1em;
+    text-align: center;
+    
+}
+#mapa iframe{
+    border-radius: 1em;
+}
+#mapa p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+
+}
+
+#rrss{
+    display: flex;
+    flex-direction: row;
+    justify-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8em;
+    background-color: yellow;
+    
+   
+}
+#rrss a {
+    background-color: rgb(87, 85, 85);
+    justify-items: baseline;
+    border-radius: 5em;
+    height: 3em;
+    width:3em ;
+    margin-top: 1em;
+}
+footer p {
+    background-color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.copy{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+/*Probando para cosas que tiene index */
+/*para poner class era empezando con el . */
+/* para poner id era empezando con # */
