@@ -17,12 +17,14 @@ body{
 }
 .LogoYMenu{
     position: fixed;
+    z-index: 3;
 }
 
 #logo{
     background-color: yellow;
     width: 100%;
     height: 3em;
+    z-index: 3;
     
     
 }
@@ -37,6 +39,7 @@ body{
     height: 3em;
     position: fixed;
     font-size: 3em;
+    z-index: 3;
     
 
 }
@@ -47,6 +50,7 @@ header nav {
     background-color: yellow;
     position: fixed;
     margin-top: 4em;
+    z-index: 3;
     
 }
 
@@ -56,6 +60,7 @@ header nav ul {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 1em;
+    z-index: 3;
     
 }
 
@@ -66,11 +71,13 @@ header nav ul li{
     text-decoration: none;
     margin-bottom: 1em;
     font-size: 1.3em;
+    z-index: 3;
 }
 nav ul li a {
     text-decoration: none;
- 
+    
 }
+
 
 /* CSS DE LOS TITULOS */
 .titulosPaginas{
@@ -142,9 +149,8 @@ nav ul li a {
 }
 
 #cardCliente{
-   /* background-color: rgb(255, 221, 0);*/
     margin-left: 11em;
-    margin-top: 3em;
+    margin-top: 3px;
     margin-right: 5em;
     display:inline-block;
     justify-content: space-between;
@@ -158,6 +164,7 @@ nav ul li a {
 #cardCliente img {
     width: 16em;
     height: 16em;
+    overflow: hidden;
     
 }
 #cardCliente h3 {
@@ -203,7 +210,7 @@ nav ul li a {
     color: rgb(83, 82, 82);
     margin-left: 0em;
     margin-top: 1em;
-    /*text-align: center;*/
+
 }
 
 
@@ -256,13 +263,7 @@ nav ul li a {
     height: 110%;
     width: 90%;
     overflow: auto;
-    
-   /* border-color: yellow;
-    border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
-    border-style: solid;*/
     font-size: 1em;
-    /*border-bottom: 4em;*/
-    /*margin-bottom: 2em;*/
     background-color: white; 
     
 
@@ -336,20 +337,31 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     justify-items:center;
+    align-items: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.8em;
     background-color: yellow;
+    height: 7em ;
     
    
 }
 #rrss a {
-    background-color: rgb(87, 85, 85);
+    background: radial-gradient(circle, rgba(246,247,105,1) 35%, rgba(251,146,22,1) 100%);
     justify-items: baseline;
     border-radius: 5em;
-    height: 3em;
-    width:3em ;
+    height: 3.5em;
+    width:3.5em ;
+
+ 
+}
+#rrss a:hover{
+    transform: scale(1.2, 1.2);
+ 
+}
+#rrss a svg {
     margin-top: 1em;
 }
+
 footer p {
     background-color: yellow;
     font-family: 'Times New Roman', Times, serif;
@@ -363,8 +375,3 @@ footer p {
 
 
 
-
-
-/*Probando para cosas que tiene index */
-/*para poner class era empezando con el . */
-/* para poner id era empezando con # */
