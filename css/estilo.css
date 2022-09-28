@@ -6,7 +6,6 @@
 *{
     margin:0 auto;
     width:100%;
-    max-width: 1200px;
     overflow-x: hidden; 
     
 }
@@ -15,41 +14,32 @@ body{
     background-repeat: repeat-x;
     width: 100%;
 }
-.LogoYMenu{
-    position: fixed;
-    z-index: 3;
-}
-
-#logo{
-    background-color: yellow;
-    width: 100%;
-    height: 3em;
-    z-index: 3;
-    
-    
-}
-#logo h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family:'Playfair Display', serif ;
-    /*margin-top: 0;*/
-    background-color: yellow;
-    width: 100%;
-    height: 3em;
-    position: fixed;
-    font-size: 3em;
-    z-index: 3;
-    
+.navbar{
+    height: auto;
+    width: auto;
 
 }
+.bgPropio {
+    background-color: yellow;
+}
+.navbar-brand{
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+
+}
+.nav-item {
+    font-size:  1.3em;
+}
+
+
+
 header nav {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     background-color: yellow;
     position: fixed;
-    margin-top: 4em;
+    /* margin-top: 4em; */
     z-index: 3;
     
 }
@@ -59,7 +49,7 @@ header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     z-index: 3;
     
 }
@@ -69,7 +59,7 @@ header nav ul li{
     color: black;
     /*list-style-type: none ;*/
     text-decoration: none;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     font-size: 1.3em;
     z-index: 3;
 }
@@ -81,13 +71,16 @@ nav ul li a {
 
 /* CSS DE LOS TITULOS */
 .titulosPaginas{
-    margin-top: 6em;
+    
     font-family: 'Playfair Display', serif ;
-    font-size: 1.5em;
+    font-size: 10em;
     text-align: center;
 }
-
+.titulosPaginas h2{
+    font-size: 0.5em;
+    overflow: hidden;
     
+}
 
 #encabezado {
 
@@ -97,47 +90,135 @@ nav ul li a {
 
 /* CSS DE LA HOME*/
 
-#presentacion {
-    margin-top: 11em;
+
+.contenedorInicio{
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "hola hola hola hola "
+    "inicio inicio inicio imagen"
+    "texto texto contacto contacto"
+    "video video video video"
+    
+    ;
+    grid-template-rows: 5rem 24rem 22rem 30rem; 
+
     background-color: white;
-
-
 }
-#presentacion h2{
+.boxHola{
+    grid-area: hola;
+    text-align: center;
+    
+}
+.boxHola h2{
+    font-size: 3rem;
     font-family: 'Playfair Display', serif ;
-    display: flex;
-    justify-content: center;
-    font-size: 2em;
-    margin-top: 0.5em;
+    overflow: hidden;
+    margin-top: 0.2rem;
+}
+.boxInicio{
+    /* grid-column: 1 / 4 ;
+    grid-row: 1 / 1 ; */
+    grid-area: inicio;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    text-align: center;
 
 }
-#presentacion p {
-    font-family:'Noto Sans', sans-serif ;
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
+
+.boxInicio h2{
+    font-family: 'Playfair Display', serif ;
+    font-size: 4rem;
+    text-align: center;
+    overflow:hidden;
+    margin-top: 2rem;
+    
 }
-#presentacion img {
-    display: flex;
-    justify-content: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    width: 24em;
-    height: 24em;
+.boxInicio p {
+    margin-top: 2rem;
+    text-align: justify;
+    margin-left: 1rem;
+    height: 20rem;
+    width: 80rem;
 }
-#presentacion iframe {
+
+.boxImagen{
+    /* grid-column: 4 / 5;
+    grid-row: 1 / 1; */
+    grid-area: imagen;
+}
+.boxImagen img {
+   border-radius: 1rem;
+}
+.boxTexto{
+    /* grid-column: 1 / 3 ;
+    grid-row: 2 / 2 ;  */
+    grid-area: texto;
+    /*height: 15em;
+    width: 15rem;*/
+    background-color: yellow;
+    overflow: hidden;
+    border-radius: 3rem;
+    margin-left: 1rem;
+}
+.boxTexto p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 6rem;
+    height: 14rem;
+    width: 54rem;
+    
+}
+
+.boxContacto{
+    /* grid-column: 3 / 5 ;
+    grid-row: 2 / 2; */
+    background-color: rgba(251, 255, 0, 0.527);
+    border-radius: 1em;
+    grid-area: contacto;
+    height: 18em;
+    margin-top: 2em;
+    width:19rem;
+}
+.boxContacto p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+    display: inline-block;
+    text-align: center;
+    margin-top:2.5rem;
+    justify-content: center;
+}
+.boxContacto p a {
+    text-decoration: none;
+    color: grey;
+}
+.boxContacto p a:hover{
+    color:red;
+    transform: scale(2 , 2);
+}
+ .boxVideo{
+    grid-area: video;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.boxVideo iframe{
     border-radius: 1em;
     width: 90%;
     border: 3em;
     margin-left: 8em;
     margin-bottom: 1em;
-    margin-top: 3em;
-    text-align: center;
-    width: 60em;
-    height: 40em;
+    width: 50rem;
+    height: 30rem;
+    display: inline-block;
+    justify-items: center;
+    align-content: center;
 
-}
+} 
+
+
 
 
 
@@ -172,18 +253,24 @@ nav ul li a {
     font-size: 1em;
     text-decoration: none;
     text-align: center;
+    overflow: hidden;
 
 }
+#cardCliente h3 a {
+    text-decoration: none;
+}
+
+
+
 
 
  /*  CSS DE SERVICIOS */
  
-#contenedorServicios{
-    margin-top: 1em;
-
+.contenedorServicios{
+ 
 }
 
-#servicio{
+.servicio{
     background-color: rgb(255, 221, 0);
     margin-left: 11em;
     margin-top: 3em;
@@ -195,17 +282,20 @@ nav ul li a {
     height: 12em;
     border-radius: 2em;
     margin-bottom: 1em;
+    grid-area: servicios;
+
 }
 
-#servicio h3{
+
+.servicio h3{
     font-family:'Noto Sans', sans-serif;
     text-align:left;
     margin-top: 0.5em;
     margin-left: 1em;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
-#servicio ul li {
+.servicio ul li {
     font-family:'Noto Sans', sans-serif; 
     color: rgb(83, 82, 82);
     margin-left: 0em;
@@ -215,14 +305,16 @@ nav ul li a {
 
 
 
+
+
+
 /* CSS DE FAQ*/
 
 
 #contenedorFAQ{
-   margin-left: 1em;
-   
    
 }
+
 #preguntas{
     background-color: rgb(255, 221, 0);
     margin-left: 11em;
@@ -231,8 +323,8 @@ nav ul li a {
     display:inline-block;
     justify-content: space-between;
     align-items: center;
-    width: 18em;
-    height: 16em;
+    width: 20em;
+    height: 18em;
     border-radius: 2em;
     margin-bottom: 1em;
     
@@ -242,7 +334,7 @@ nav ul li a {
     text-align: center;
     margin-top: 0.5em;
     font-size: 1.5em;
-
+    overflow: hidden;
 }
 #preguntas p {
     font-family:'Noto Sans', sans-serif; 
@@ -252,6 +344,17 @@ nav ul li a {
     text-align: center;
   
 }
+#preguntas p a {
+    text-decoration: none;
+    color:black;
+}
+#preguntas p a:hover{
+    color:red;
+}
+
+
+
+
 
 
 /*  CSS DE CONTACTANOS */
@@ -372,6 +475,143 @@ footer p {
     font-size: 1.2em;
 }
 
+@media (max-width:576px){
+    .contenedorInicio{
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "hola"
+        "inicio"
+        "imagen"
+        "texto"
+        "contacto"
+        "video"
+        ;
+        grid-template-rows: 5rem 15rem 10rem 8rem 10rem 10rem; 
+        grid-template-columns: 25rem;
+        background-color: white;
+    }
+  
+    .boxInicio{
+        width: 28rem;
+        background-color: aquamarine;
+        height: 18rem;
+        overflow: hidden;
+        margin: 0;
+    }
+    .boxInicio p{
+        width: 26rem;
+        margin-top: 0.5rem;
+    }
+    .boxImagen img{
+        margin-top:0.5rem;
+    }
+    .boxImagen{
+        margin: 0;
+        width: 20rem;
+        background-color: blue;
+        height: 17rem;
+
+    }
+    .boxTexto{
+        background-color: pink;
+        border-radius: 0rem;
+        height: 20rem;
+        width: 22rem;
+        margin: 0;
+        overflow: hidden;
+        margin-top: 0;
+    }
+    .boxTexto p{
+        margin-top: 1rem;
+        width: 20rem;
+        height: 25rem;
+        background-color: aquamarine;
+    }
+    .boxContacto{
+        margin: 0 ;
+        height: 20rem;
+        width: 22rem;
+
+    }
+    .boxContacto p {
+        margin-top: 6rem;
+    }
+    .boxVideo{
+        margin: 0;
+    }
+    .boxVideo iframe{
+        margin-left: 1rem;
+        width: 10rem;
+        height: 16rem;
+    }
+
+}
 
 
+@media(max-width:768px){
+    .contenedorInicio{
+        display: grid;
+        /* height: 100vh; */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "hola hola hola"
+        "inicio imagen"
+        "texto texto"
+        "contacto contacto"
+        "video video"
+        ;
+        grid-template-rows: 8rem 18rem 25rem 31rem;
+        }
+        
+        .boxInicio{
+            width: 28rem;
+            background-color: aquamarine;
+            height: 18rem;
+            overflow: hidden;
+            margin: 0;
+        }
+        .boxInicio p{
+            width: 26rem;
+            margin-top: 0.5rem;
+        }
+        .boxImagen img{
+            margin-top:0.5rem;
 
+        }
+        .boxImagen{
+            margin: 0;
+            width: 16rem;
+
+        }
+        .boxTexto{
+            background-color: pink;
+            border-radius: 0rem;
+            height: 20rem;
+            width: 22rem;
+            margin: 0;
+            overflow: hidden;
+        }
+        .boxTexto p{
+            margin-top: 1rem;
+            width: 20rem;
+            height: 25rem;
+        }
+        .boxContacto{
+            margin: 0 ;
+            height: 20rem;
+            width: 22rem;
+
+        }
+        .boxContacto p {
+            margin-top: 6rem;
+        }
+        .boxVideo{
+            margin: 0;
+        }
+        .boxVideo iframe{
+            margin-left: 1rem;
+            width: 44rem;
+        }
+}

@@ -7,46 +7,81 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
-<<<<<<< HEAD
-=======
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
->>>>>>> animaciones
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="./css/estilo.css">
     <title> Soledad Community </title>
 </head>
 
 <body>
-        <header class="LogoYMenu">
-            <section id="logo">
-                 <h1>  Soledad Community </h1>
-            </section>
-
-            <section>
-                <nav>
-                    <ul> 
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="./pages/clientes.html">Clientes</a></li>
-                        <li><a href="./pages/paquetes.html">Servicios</a></li>
-                        <li><a href="./pages/faq.html">FAQ</a></li>
-                        <li><a href="./pages/contacto.html">Contactanos</a></li>
+        <header>
+            <nav class="navbar navbar-expand-lg bgPropio">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Soledad Community</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/paquetes.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    
                     </ul>
-                </nav> 
-            </section>
+                    
+                </div>
+                </div>
+            </nav>
         </header>
         
-     <div id="presentacion">
-        <h2>Hola!!!</h2>
-        <p>Es un emprendimiento freelance, manejo de redes sociales, creación de
-            contenido y asesoramiento. Dirigido al pequeño emprendedor, al dueño de una marca o a grandes
-            empresas.</p>
-        <img src="./assets/img/fotoHome.jpg" >
-        <p>En este sitio vas a poder encontrar mas información sobre mi,  sobre mis servicios, mis trabajos, mis estudios y también voy a compartir herramientas para guiarte un poquito en este mundo digital!</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/v-AYs_dskzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-    </div>
-   
+        <body>
+            <main class="contenedorInicio">
+                <div class="boxHola">
+                    <h2>Bienvenido a Soledad Community </h2>
+                </div>
+                <div class="boxInicio">
+                    
+                    <p>Es un emprendimiento freelance, manejo de redes sociales, creación de
+                        contenido y asesoramiento. Dirigido al pequeño emprendedor, al dueño de una marca o a grandes
+                        empresas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio atque veniam fugiat officia obcaecati sed, ad reprehenderit officiis vero sequi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, tempore. Sint dolore eveniet quas tenetur! Hic dolor quis ducimus. Magni reiciendis recusandae tenetur ex, expedita quae voluptatem! Fuga, ex perferendis?
+                    </p>
+                </div>
 
-        
-        <hr>
+                <div class="boxImagen">
+                    <img src="./assets/img/fotoHome2.jpg" >
+                </div>
+
+                <div class="boxTexto">
+                    <p>En este sitio vas a poder encontrar mas información sobre mi,  sobre mis servicios, mis trabajos, mis estudios y también voy a compartir herramientas para guiarte un poquito en este mundo digital.
+                   Nuestro objetivo es ayudarte a que tu marca comience a tener mayor visibilidad, mayor trafico de gente que se interese por tu producto o servicio, se sienta identificado y se convierta en un cliente potencial.
+                    El camino es largo pero posible y real!</p>
+                </div>
+
+                <div class="boxContacto">
+                    <p> Queres conocernos? Ingresa <a href="./pages/contacto.html">aca</a></p>
+                </div>
+
+               <div class="boxVideo"> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NA_dLAOgpac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+            </main>
+        </body>
+
         <footer>
             <nav id="rrss">
                 <a href="https://instagram.com/soledadcommunity?igshid=YmMyMTA2M2Y=" target="_blank" >
@@ -76,5 +111,8 @@
         <script>
             AOS.init();
           </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 </html>
