@@ -262,7 +262,7 @@ nav ul li a {
     "servicioSV servicioSV servicioSV reconocimiento"
     
     ;
-    grid-template-rows: 15rem 15rem 15rem ; 
+    grid-template-rows: 15rem 18rem 15rem ; 
     grid-template-columns: 25% 25% 25% 25% ;
 
 }
@@ -453,11 +453,6 @@ nav ul li a {
     margin-top: 1em;
 
 }
-
-
-
-
-
 
 /* CSS DE FAQ*/
 
@@ -693,7 +688,6 @@ footer p {
             width: 95%;
         }
         .boxVideo iframe{
-            /* margin-left: 1rem; */
             width: 100%;
             margin: 10%;
         }
