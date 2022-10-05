@@ -89,8 +89,8 @@ nav ul li a {
 
 .contenedorInicio{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 5rem 27rem 22rem 40rem; 
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas: 
     "hola hola hola hola "
     "inicio inicio inicio imagen"
@@ -98,9 +98,7 @@ nav ul li a {
     "video video video video"
     
     ;
-    grid-template-rows: 5rem 27rem 22rem 40rem; 
-    grid-template-columns: 25% 25% 25% 25%;
-    /* background-color: white; */
+
 }
 .boxHola{
     grid-area: hola;
@@ -254,17 +252,15 @@ nav ul li a {
  
 .contenedorServicios{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 15rem 23rem 15rem ; 
+    grid-template-columns: 25% 25% 25% 25% ;
     grid-template-areas: 
     "servicioIG servicioIG servicioIG comunidad"
     "servicioFB ventas ventas reconocimiento"
     "servicioSV servicioSV servicioSV reconocimiento"
     
     ;
-    grid-template-rows: 15rem 18rem 15rem ; 
-    grid-template-columns: 25% 25% 25% 25% ;
-
+    
 }
 .servicioIG{
     grid-area:servicioIG;
@@ -625,7 +621,7 @@ footer p {
     .contenedorInicio{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(5,1fr);
+        grid-template-rows: 8rem 20rem 28rem 25rem;
         grid-template-areas: 
         "hola hola hola"
         "inicio imagen"
@@ -633,7 +629,6 @@ footer p {
         "contacto contacto"
         "video video"
         ;
-        grid-template-rows: 8rem 20rem 28rem 25rem;
         }
         
         .boxInicio{
@@ -696,16 +691,15 @@ footer p {
         /*MEDIA DE SERVICIOS*/
         .contenedorServicios{
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: 15rem 25rem 20rem ; 
+            grid-template-columns: 25% 25% 25% 25% ;
             grid-template-areas: 
             "servicioIG servicioIG servicioIG comunidad"
             "servicioFB servicioFB ventas reconocimiento"
             "servicioSV servicioSV servicioSV reconocimiento"
             
             ;
-            grid-template-rows: 15rem 20rem 20rem ; 
-            grid-template-columns: 25% 25% 25% 25% ;
+
         
         }
         .servicioIG{
@@ -737,7 +731,7 @@ footer p {
             justify-content: space-between;
             align-items: center;
             width:100%;
-            height: 18em;
+            height: 90%;
             border-radius: 2em;
             margin-bottom: 1em;
             overflow: hidden;
@@ -860,8 +854,8 @@ footer p {
     }
     .contenedorInicio{
         display: grid;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 8rem 15rem 25rem 12rem 18rem 15rem; 
+        grid-template-columns: 100%;
         grid-template-areas: 
         "hola"
         "inicio"
@@ -870,8 +864,6 @@ footer p {
         "contacto"
         "video"
         ;
-        grid-template-rows: 8rem 15rem 25rem 12rem 18rem 15rem; 
-        grid-template-columns: 100%;
         background-color: white;
     }
     .boxHola{
@@ -882,8 +874,10 @@ footer p {
         height: 18rem;
         overflow: hidden;
         margin: 0;
+        font-size: 1rem;
 
     }
+    
     .boxInicio p{
         width: 90%;
         margin-top: 0.7rem;
@@ -938,15 +932,13 @@ footer p {
         margin-top: 0;
         margin-bottom: 0;
     } 
-    .boxInicio{
-        font-size: 1rem;
-    }
-
+   
     /*MEDIA DE SERVICIOS*/
 
     .contenedorServicios{
         display: grid;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: 14rem 10rem 10rem 18rem 10rem 25rem; 
+        grid-template-columns: 100%;
         grid-template-areas: 
         "servicioIG"
         "comunidad"
@@ -955,34 +947,38 @@ footer p {
         "reconocimiento"
         "servicioSV"
         ;
-        grid-template-rows: 10rem 8rem 10rem 12rem 10rem 18rem; 
-        grid-template-columns: 100%;
+        
     }
     .servicioIG{
         width: 90%;
         height: 90%;
+        margin-left: 5%;
     }
     .comunidad{
         width: 90%;
         height: 90%;
+        margin-left: 5%;
     }
     .ventas{
         width: 90%;
         height: 90%;
         margin: 0;
-        margin-left: 1em;
+        margin-left: 5%;
     }
     .servicioFB{
         width: 90%;
         height: 90%;
+        margin-left: 5%;
     }
     .reconocimiento{
         width: 90%;
         height: 90%;
+        margin-left: 5%;
     }
     .servicioSV{
         width: 90%;
         height: 90%;
+        margin-left: 5%;
     }
 
 
