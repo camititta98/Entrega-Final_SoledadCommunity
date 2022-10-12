@@ -1,368 +1,394 @@
-@media(max-width:768px){
-    .contenedorInicio{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 8rem 20rem 28rem 25rem;
-        grid-template-areas: 
-        "hola hola hola"
-        "inicio imagen"
-        "texto texto"
-        "contacto contacto"
-        "video video"
-        ;
+
+
+    @media(max-width:768px){
+        .contenedorInicio{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 8rem 20rem 28rem 25rem;
+            grid-template-areas: 
+            "hola hola hola"
+            "inicio imagen"
+            "texto texto"
+            "contacto contacto"
+            "video video"
+            ;
+            }
+            
+            .boxInicio{
+                width: 28rem;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                margin: 0;
+                p{
+                    width: 90%;
+                    height: 100%;
+                    margin-top:2%;
+                    overflow: hidden;
+                }
+            }
+
+            .boxImagen{
+                margin: 0;
+                width: 16rem;
+
+                img{
+                    margin-top:0.5rem;
+                }
+            }
+            .boxTexto{
+                border-radius: 0rem;
+                height:100%;
+                width: 100%;
+                margin: 0;
+                overflow: hidden;
+                p{
+                    width: 90%;
+                    height: 100%;
+                    margin: 5%;
+                    overflow: hidden;
+                }
+            } 
+
+            .boxContacto{
+                margin: 5% ;
+                margin-left: 2%;
+                height: 20rem;
+                width: 22rem; 
+                
+                p {
+                    margin-top: 25%;
+                    margin-left: 5%;
+                }
+            } 
+
+            .boxVideo{
+                margin: 2%;
+                height: 90%;
+                width: 95%;
+
+                iframe{
+                    width: 100%;
+                    margin: 10%;
+                }
+            }
+ 
+    
+    
+            /*MEDIA DE SERVICIOS*/
+            .contenedorServicios{
+                display: grid;
+                grid-template-rows: 15rem 25rem 20rem ; 
+                grid-template-columns: 25% 25% 25% 25% ;
+                grid-template-areas: 
+                "servicioIG servicioIG servicioIG comunidad"
+                "servicioFB servicioFB ventas reconocimiento"
+                "servicioSV servicioSV servicioSV reconocimiento"
+                
+                ;
+    
+            
+            }
+            .servicioIG{
+                grid-area:servicioIG;
+                overflow: hidden;
+                background-color: $colorServicio;
+                margin-left: 1rem;
+                margin-top: 0em;
+                margin-right: 2em;
+                display:inline-block;
+                justify-content: space-between;
+                align-items: center;
+                width:90%;
+                height: 12em;
+                border-radius: 2em;
+                margin-bottom: 1em;
+
+                    h3{
+                    overflow: hidden;
+                    margin-left: 1em;
+                    margin-top:1em;
+                    }
+            }
+
+            .servicioFB{
+                grid-area:servicioFB;
+                background-color: $colorServicio;
+                margin-left: 1rem;
+                display:inline-block;
+                justify-content: space-between;
+                align-items: center;
+                width:100%;
+                height: 90%;
+                border-radius: 2em;
+                margin-bottom: 1em;
+                overflow: hidden;
+
+                h3{
+                    overflow: hidden;
+                    margin-left: 1em;
+                    margin-top:1em;
+                }
+
+                p{
+                    margin:0;
+                    width: 90%;
+                }
+            }
+
+       
+            
+            .servicioSV{
+                grid-area:servicioSV;
+                background-color: $colorServicio;
+                margin-left: 1rem;
+                margin-top: 0em;
+                margin-right: 2em;
+                display:inline-block;
+                justify-content: space-between;
+                align-items: center;
+                width:95%;
+                height: 18em;
+                border-radius: 2em;
+                margin-bottom: 1em;
+                overflow: hidden;
+
+                h3{
+                    overflow: hidden;
+                    margin-left: 1em;
+                    margin-top:1em;
+                }
+
+                p{
+                    width: 90%;
+                }
+            }
+            
+            
+            .comunidad{
+                grid-area:comunidad ;
+                overflow: hidden;
+                background-color: $colorServicio;
+                margin-top: 0em;
+                margin-right: 2em;
+                display:inline-block;
+                justify-content: space-between;
+                align-items: center;
+                width:95%;
+                height: 12em;
+                border-radius: 2em;
+                margin-bottom: 1em;
+
+                p {
+                    width: 90%;
+                    height: 100%;
+                }
+
+                h3 {
+                    overflow: hidden;
+                    margin-top:1em;
+                }
+            }
+  
+            
+            .ventas{
+                grid-area:ventas;
+                overflow: hidden;
+                width: 100%;
+                background-color: $colorServicio;
+                margin-left: 2rem;
+                margin-top: 0em;
+                margin-right: 2em;
+                display:inline-block;
+                justify-content: space-between;
+                align-items: center;
+                width:80%;
+                height: 18em;
+                border-radius: 2em;
+                margin-bottom: 1em;
+
+                h3{
+                    overflow: hidden;
+                    margin-top:1em;
+                }
+
+                p {
+                    width: 90%;
+                }
+            }
+
+            .reconocimiento{
+                grid-area:reconocimiento;
+                overflow: hidden;
+                background-color: $colorServicio;
+                margin-top: 0em;
+                margin-right: 2em;
+                display:inline-block;
+                justify-content: space-between;
+                align-items: center;
+                width:90%;
+                height: 38em;
+                border-radius: 2em;
+                margin-bottom: 1em;
+
+                h3{
+                    overflow: hidden;
+                    margin-top:1em;
+                    width: 90%;
+                    text-align: left;
+                }
+
+                p{
+                    width: 90%;
+                }
+            } 
+            
+    }
+
+
+
+
+    @media(max-width:576px){
+        *{
+            margin:0 auto;
+            width:100%;
+            overflow-x: hidden; 
+            
         }
-        
-        .boxInicio{
-            width: 28rem;
-            height: 100%;
+        .contenedorInicio{
+            display: grid;
+            grid-template-rows: 8rem 15rem 25rem 12rem 18rem 15rem; 
+            grid-template-columns: 100%;
+            grid-template-areas: 
+            "hola"
+            "inicio"
+            "imagen"
+            "texto"
+            "contacto"
+            "video"
+            ;
+            background-color: white;
+        }
+        .boxHola{
             width: 100%;
+        }
+        .boxInicio{
+            width: 100%;
+            height: 18rem;
             overflow: hidden;
             margin: 0;
+            font-size: 1rem;
+            
+            p{
+                width: 90%;
+                margin-top: 0.7rem;
+                font-size: 0.8em;
+            }
         }
-        .boxInicio p{
-            width: 90%;
-            height: 100%;
-            margin-top:2%;
-            overflow: hidden;
-        }
-        .boxImagen img{
-            margin-top:0.5rem;
-
-        }
+        
         .boxImagen{
             margin: 0;
-            width: 16rem;
+            width: 100%;
+            height: 100%;
 
+            img{
+                margin-top:0.5rem;
+                width: 80%;
+                height: 80%;
+                margin: 5%;
+                margin-left: 10%;
+            }
         }
+
         .boxTexto{
             border-radius: 0rem;
-            height:100%;
-            width: 100%;
             margin: 0;
             overflow: hidden;
-        }
-        .boxTexto p{
-            width: 90%;
-            height: 100%;
-            margin: 5%;
-            overflow: hidden;
-        }
-        .boxContacto{
-            margin: 5% ;
-            margin-left: 2%;
-            height: 20rem;
-            width: 22rem; 
-
-        }
-        .boxContacto p {
-            margin-top: 25%;
-            margin-left: 5%;
-        }
-        .boxVideo{
-            margin: 2%;
-            height: 90%;
-            width: 95%;
-        }
-        .boxVideo iframe{
+            margin-top: 0;
             width: 100%;
-            margin: 10%;
+            height: 100%;
+
+            p{
+                margin-top: 1rem;
+                height: 90%;
+                width: 90%;
+                margin-top: 0.7rem;
+                font-size: 0.8em;
+            }
         }
 
+        .boxContacto{
+            height: 70%;
+            width: 70%;
+            margin: 8%;
+            margin-left: 12%;
 
+            p {
+                margin-top: 5%;
+            }
+        }
+
+        .boxVideo{
+            width: 100%;
+            height: 100%;
+
+            iframe{
+            margin: 10%;
+            width: 80%;
+            height: 80%;
+            margin-top: 0;
+            margin-bottom: 0;
+        } 
+        }
+       
         /*MEDIA DE SERVICIOS*/
+    
         .contenedorServicios{
             display: grid;
-            grid-template-rows: 15rem 25rem 20rem ; 
-            grid-template-columns: 25% 25% 25% 25% ;
+            grid-template-rows: 14rem 10rem 10rem 18rem 10rem 25rem; 
+            grid-template-columns: 100%;
             grid-template-areas: 
-            "servicioIG servicioIG servicioIG comunidad"
-            "servicioFB servicioFB ventas reconocimiento"
-            "servicioSV servicioSV servicioSV reconocimiento"
-            
+            "servicioIG"
+            "comunidad"
+            "ventas"
+            "servicioFB"
+            "reconocimiento"
+            "servicioSV"
             ;
-
-        
+            
         }
         .servicioIG{
-            grid-area:servicioIG;
-            overflow: hidden;
-        
-            background-color: rgb(255, 221, 0);
-            margin-left: 1rem;
-            margin-top: 0em;
-            margin-right: 2em;
-            display:inline-block;
-            justify-content: space-between;
-            align-items: center;
-            width:90%;
-            height: 12em;
-            border-radius: 2em;
-            margin-bottom: 1em;
+            width: 90%;
+            height: 90%;
+            margin-left: 5%;
         }
-        .servicioIG h3{
-            overflow: hidden;
-            margin-left: 1em;
-            margin-top:1em;
+        .comunidad{
+            width: 90%;
+            height: 90%;
+            margin-left: 5%;
+        }
+        .ventas{
+            width: 90%;
+            height: 90%;
+            margin: 0;
+            margin-left: 5%;
         }
         .servicioFB{
-            grid-area:servicioFB;
-            background-color: rgb(255, 221, 0);
-            margin-left: 1rem;
-            display:inline-block;
-            justify-content: space-between;
-            align-items: center;
-            width:100%;
+            width: 90%;
             height: 90%;
-            border-radius: 2em;
-            margin-bottom: 1em;
-            overflow: hidden;
-        }
-        .servicioFB h3{
-            overflow: hidden;
-            margin-left: 1em;
-            margin-top:1em;
-            
-        }
-        .servicioFB p{
-            margin:0;
-            width: 90%;
-        }
-        
-        .servicioSV{
-            grid-area:servicioSV;
-            background-color: rgb(255, 221, 0);
-            margin-left: 1rem;
-            margin-top: 0em;
-            margin-right: 2em;
-            display:inline-block;
-            justify-content: space-between;
-            align-items: center;
-            width:95%;
-            height: 18em;
-            border-radius: 2em;
-            margin-bottom: 1em;
-            overflow: hidden;
-        }
-        .servicioSV h3{
-            overflow: hidden;
-            margin-left: 1em;
-            margin-top:1em;
-        }
-        .servicioSV p{
-            width: 90%;
-        }
-        
-        .comunidad{
-            grid-area:comunidad ;
-            overflow: hidden;
-            background-color: rgb(255, 221, 0);
-            margin-top: 0em;
-            margin-right: 2em;
-            display:inline-block;
-            justify-content: space-between;
-            align-items: center;
-            width:95%;
-            height: 12em;
-            border-radius: 2em;
-            margin-bottom: 1em;
-        }
-        .comunidad p {
-            width: 90%;
-            height: 100%;
-        }
-        .comunidad h3 {
-            overflow: hidden;
-            margin-top:1em;
-        }
-        
-        .ventas{
-            grid-area:ventas;
-            overflow: hidden;
-            width: 100%;
-            background-color: rgb(255, 221, 0);
-            margin-left: 2rem;
-            margin-top: 0em;
-            margin-right: 2em;
-            display:inline-block;
-            justify-content: space-between;
-            align-items: center;
-            width:80%;
-            height: 18em;
-            border-radius: 2em;
-            margin-bottom: 1em;
-        }
-        .ventas h3{
-            overflow: hidden;
-            margin-top:1em;
-
-        }
-        .ventas p {
-            width: 90%;
+            margin-left: 5%;
         }
         .reconocimiento{
-            grid-area:reconocimiento;
-            overflow: hidden;
-            background-color: rgb(255, 221, 0);
-            margin-top: 0em;
-            margin-right: 2em;
-            display:inline-block;
-            justify-content: space-between;
-            align-items: center;
-            width:90%;
-            height: 38em;
-            border-radius: 2em;
-            margin-bottom: 1em;
-        }
-        .reconocimiento h3{
-            overflow: hidden;
-            margin-top:1em;
             width: 90%;
-            text-align: left;
+            height: 90%;
+            margin-left: 5%;
         }
-        .reconocimiento p{
+        .servicioSV{
             width: 90%;
+            height: 90%;
+            margin-left: 5%;
         }
-        
-}
-
-
-@media(max-width:576px){
-    *{
-        margin:0 auto;
-        width:100%;
-        overflow-x: hidden; 
-        
-    }
-    .contenedorInicio{
-        display: grid;
-        grid-template-rows: 8rem 15rem 25rem 12rem 18rem 15rem; 
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "hola"
-        "inicio"
-        "imagen"
-        "texto"
-        "contacto"
-        "video"
-        ;
-        background-color: white;
-    }
-    .boxHola{
-        width: 100%;
-    }
-    .boxInicio{
-        width: 100%;
-        height: 18rem;
-        overflow: hidden;
-        margin: 0;
-        font-size: 1rem;
-
-    }
     
-    .boxInicio p{
-        width: 90%;
-        margin-top: 0.7rem;
-        font-size: 0.8em;
+    
+    
     }
-    .boxImagen img{
-        margin-top:0.5rem;
-        width: 80%;
-        height: 80%;
-        margin: 5%;
-        margin-left: 10%;
-    }
-    .boxImagen{
-        margin: 0;
-        width: 100%;
-        height: 100%;
-
-    }
-    .boxTexto{
-        border-radius: 0rem;
-        margin: 0;
-        overflow: hidden;
-        margin-top: 0;
-
-        width: 100%;
-        height: 100%;
-    }
-    .boxTexto p{
-        margin-top: 1rem;
-        height: 90%;
-        width: 90%;
-        margin-top: 0.7rem;
-        font-size: 0.8em;
-    }
-    .boxContacto{
-        height: 70%;
-        width: 70%;
-        margin: 8%;
-        margin-left: 12%;
-    }
-    .boxContacto p {
-        margin-top: 5%;
-    }
-    .boxVideo{
-        width: 100%;
-        height: 100%;
-    }
-    .boxVideo iframe{
-        margin: 10%;
-        width: 80%;
-        height: 80%;
-        margin-top: 0;
-        margin-bottom: 0;
-    } 
-   
-    /*MEDIA DE SERVICIOS*/
-
-    .contenedorServicios{
-        display: grid;
-        grid-template-rows: 14rem 10rem 10rem 18rem 10rem 25rem; 
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "servicioIG"
-        "comunidad"
-        "ventas"
-        "servicioFB"
-        "reconocimiento"
-        "servicioSV"
-        ;
-        
-    }
-    .servicioIG{
-        width: 90%;
-        height: 90%;
-        margin-left: 5%;
-    }
-    .comunidad{
-        width: 90%;
-        height: 90%;
-        margin-left: 5%;
-    }
-    .ventas{
-        width: 90%;
-        height: 90%;
-        margin: 0;
-        margin-left: 5%;
-    }
-    .servicioFB{
-        width: 90%;
-        height: 90%;
-        margin-left: 5%;
-    }
-    .reconocimiento{
-        width: 90%;
-        height: 90%;
-        margin-left: 5%;
-    }
-    .servicioSV{
-        width: 90%;
-        height: 90%;
-        margin-left: 5%;
-    }
-
-
-
-}  
-
