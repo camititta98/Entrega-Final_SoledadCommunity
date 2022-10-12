@@ -1,0 +1,218 @@
+.contenedorServicios{
+    display: grid;
+    grid-template-rows: 15rem 23rem 15rem ; 
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-areas: 
+    "servicioIG servicioIG servicioIG comunidad"
+    "servicioFB ventas ventas reconocimiento"
+    "servicioSV servicioSV servicioSV reconocimiento"
+    
+    ;
+    
+}
+
+.servicioIG{
+    grid-area:servicioIG;
+    overflow: hidden;
+
+    background-color: $colorServicio;
+    margin-left: 3rem;
+    margin-top: 0em;
+    margin-right: 2em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    height: 12em;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    font-family: $typoTextos;
+    font-size: 1rem;
+    color: $colorGris;
+
+    h3{
+        overflow: hidden;
+        margin-left: 1em;
+        margin-top:1em;
+        color: black;
+        font-family: $typoTextos;
+        
+    }
+
+    p{
+        width: 90%;
+    }
+}
+
+.servicioFB{
+    grid-area:servicioFB;
+    background-color: $colorServicio;
+    margin-left: 3rem;
+    margin-top: 0em;
+    margin-right: 2em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    height: 90%;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    font-family: $typoTextos;
+    font-size: 1rem;
+    color: $colorGris;
+
+    h3{
+        overflow: hidden;
+        margin-left: 1em;
+        margin-top:1em;
+        color: black;
+        
+    }
+    p{
+        width: 90%;
+        
+    }
+}
+
+.servicioSV{
+    grid-area:servicioSV;
+    background-color: $colorServicio;
+    margin-left: 3rem;
+    margin-top: 0em;
+    margin-right: 2em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    height: 90%;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    font-family: $typoTextos;
+    font-size: 1rem;
+    color: $colorGris;
+
+    h3{
+        overflow: hidden;
+        margin-left: 1em;
+        margin-top:1em;
+        color: black;
+    }
+
+    p {
+        width: 90%;
+        font-family: $typoTextos;
+        font-size: 2rem;
+    }
+}
+
+.comunidad{
+    grid-area:comunidad ;
+    overflow: hidden;
+    background-color: $colorServicio;
+    margin-top: 0em;
+    margin-right: 2em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    height: 12em;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    font-family: $typoTextos;
+    font-size: 1rem;
+    color: $colorGris;
+
+    p {
+        margin-left: 1rem;
+        width: 90%;
+    }
+
+    h3 {
+        overflow: hidden;
+        margin-left: 1em;
+        margin-top:1em;
+        color: black;
+    }
+    
+}
+
+.ventas{
+    grid-area:ventas;
+    overflow: hidden;
+    width: 100%;
+    background-color: $colorServicio;
+    margin-left: 3rem;
+    margin-top: 0em;
+    margin-right: 2em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width:85%;
+    height: 12em;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    font-family: $typoTextos;
+    font-size: 1rem;
+
+    h3{
+        overflow: hidden;
+        margin-left: 1em;
+        margin-top:1em;
+        color: black;
+    }
+
+    p {
+        margin-left: 1rem;
+        width: 90%;
+        color: $colorGris;
+    }
+}
+
+.reconocimiento{
+    grid-area:reconocimiento;
+    overflow: hidden;
+    background-color: $colorServicio;
+    margin-top: 0em;
+    margin-right: 2em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    height: 24em;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    font-family: $typoTextos;
+    font-size: 1rem;
+    color: $colorGris;
+
+    h3{
+        overflow: hidden;
+        margin-left: 1em;
+        margin-top:1em;
+        color: black;
+    }
+
+    p {
+        margin-left: 1rem;
+        width: 90%;
+    }
+    
+}
+
+.servicio{
+
+    h3{
+        font-family:$typoTextos;
+        text-align:left;
+        margin-top: 0.5em;
+        margin-left: 1em;
+        font-size: 2em;
+    }
+    ul li {
+        font-family:$typoTextos; 
+        color: $colorGris;
+        margin-left: 0em;
+        margin-top: 1em;
+    
+    }
+}

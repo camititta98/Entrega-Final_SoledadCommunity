@@ -1,0 +1,34 @@
+#contenedorClientes{
+        margin-top: 1em;
+}
+
+#cardCliente{
+    margin-left: 11em;
+    margin-top: 3px;
+    margin-right: 5em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 18em;
+    height: 18em;
+    margin-bottom: 1em;
+
+    img {
+        width: 16em;
+        height: 16em;
+        overflow: hidden;
+        
+    }
+
+    h3 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+        text-align: center;
+        overflow: hidden;
+    
+        & a {
+            text-decoration: none ;
+        }
+    }
+}

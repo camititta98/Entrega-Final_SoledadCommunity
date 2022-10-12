@@ -1,0 +1,122 @@
+.contenedorInicio{
+    display: grid;
+    grid-template-rows: 5rem 27rem 22rem 40rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+    "hola hola hola hola "
+    "inicio inicio inicio imagen"
+    "texto texto contacto contacto"
+    "video video video video"
+
+    ;
+}
+
+.boxHola{
+    grid-area: hola;
+    text-align: center;
+    width: 100%;
+
+    h2{
+        font-size: 3rem;
+        font-family: $typoTitulos;
+        overflow: hidden;
+        margin-top: 0.2rem;
+    }
+}
+
+.boxInicio{
+    grid-area: inicio;
+    font-family: $typoTextos;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: $colorBlanco;
+
+    p{
+        margin-top: 2rem;
+        text-align: justify;
+        margin-left: 1rem;
+        height: 90%;
+        width: 90%;
+    }
+}
+
+.boxImagen{
+    grid-area: imagen;
+    height:95% ;
+    width: 90%;
+    overflow: hidden;
+
+    img {
+        border-radius: 1rem;
+        margin-top: 1rem;
+     }
+}
+
+.boxTexto{
+    grid-area: texto;
+    background-color: $colorAmarillo;
+    overflow: hidden;
+    border-radius: 3rem;
+    margin-left: 1rem;
+    width: 100%;
+    height: 100%;
+
+    p {
+        font-family: $typoTextos;
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 10%;
+        height:100%;
+        width: 90%;
+        
+    }
+}
+
+.boxContacto{
+    background-color: rgba(251, 255, 0, 0.527);
+    border-radius: 1em;
+    grid-area: contacto;
+    height: 18rem;
+    margin-top: 2em;
+    width:20rem;
+
+    p{
+        font-family: $typoTextos;
+        font-size: 2rem;
+        display: inline-block;
+        text-align: center;
+        margin-top:2.5rem;
+        justify-content: center;
+        width: 90%;
+
+        a{
+            text-decoration: none;
+            color: grey;
+
+            &:hover{
+                    color:red;
+                    transform: scale(2 , 2);
+                }
+        
+        }
+    }
+}
+
+.boxVideo{
+    grid-area: video;
+    overflow: hidden;
+
+    iframe{
+        border-radius: 1em;
+        border: 3em;
+        margin-left: 5rem;
+        margin-bottom: 1rem; 
+        margin-top: 1rem;
+        width: 90%;
+        height: 90%;
+    } 
+
+}

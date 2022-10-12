@@ -1,0 +1,38 @@
+#rrss{
+    display: flex;
+    flex-direction: row;
+    justify-items:center;
+    align-items: center;
+    font-family: $typoTimes;
+    font-size: 0.8em;
+    background-color: $colorAmarillo;
+    height: 7em ;
+    
+    a {
+        background: radial-gradient(circle, rgba(246,247,105,1) 35%, rgba(251,146,22,1) 100%);
+        justify-items: baseline;
+        border-radius: 5em;
+        height: 3.5em;
+        width:3.5em ;
+
+        &:hover{
+            transform: scale(1.2, 1.2);
+        }
+
+        & svg {
+           margin-top: 1em;
+        }
+    }
+
+}
+
+footer p {
+    background-color: $colorAmarillo;
+    font-family: $typoTimes;
+    text-align: center;
+}
+
+.copy{
+    font-family: $typoTimes;
+    font-size: 1.2em;
+}

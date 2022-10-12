@@ -1,0 +1,38 @@
+#preguntas{
+    background-color: $colorServicio;
+    margin-left: 11em;
+    margin-top: 3em;
+    margin-right: 5em;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 20em;
+    height: 18em;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    
+    h3{
+        font-family: $typoTextos;
+        text-align: center;
+        margin-top: 0.5em;
+        font-size: 1.5em;
+        overflow: hidden;
+    }
+
+    p {
+        font-family:$typoTextos; 
+        color: $colorGris;
+        margin-left: 0em;
+        margin-top: 0.8em;
+        text-align: center;
+      
+        a{
+            text-decoration: none;
+            color:black;
+
+            &:hover{
+                color:red;
+            }
+        }
+    }
+}

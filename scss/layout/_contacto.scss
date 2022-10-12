@@ -1,0 +1,81 @@
+.formulario{
+    font-family: $typoTextos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110%;
+    width: 90%;
+    overflow: auto;
+    font-size: 1em;
+    background-color: white; 
+    
+    input{
+        width: 95%;
+        overflow: hidden;
+        border-color: $colorAmarillo;
+        border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
+        border-style: solid;
+        height: 2.5em;
+      
+    }
+
+    select{
+        width: 95%;
+        overflow: hidden;
+        border-color: $colorAmarillo;
+        border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
+        border-style: solid;
+        height: 2.5em;
+    }
+
+    textarea{
+        width: 95%;
+        overflow: hidden;
+        border-color: $colorAmarillo;
+        border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
+        border-style: solid;
+    }
+
+    fieldset{
+        width: 95%;
+        overflow: hidden;
+        border-color: $colorAmarillo;
+        border-bottom-width: 0.9em 0.9em 0.9em 0.9em;
+        border-style: solid;
+    }
+}
+
+.botones{
+    margin-top: 1em;
+    display: inline-flex;
+    justify-content:space-around ;
+
+    input{
+        margin-top: 1em;
+        display: inline-flex;
+        justify-content:space-around ;
+        width: 8em;
+        height: 2em;
+        background-color: $colorBoton;
+        font-family: $typoTextos;
+        font-size: 1em;
+    }
+}
+
+#mapa{
+    width: 90%;
+    border: 3em;
+    border-color: $colorAmarillo;
+    margin-bottom: 1em;
+    text-align: center;
+
+    iframe{
+        border-radius: 1em;
+    }
+
+    p {
+        font-family: $typoTextos;
+        font-size: 1.5em;
+    
+    }
+}
