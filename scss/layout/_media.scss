@@ -1,6 +1,4 @@
-
-
-    @media(max-width:768px){
+ @media(max-width:768px){
         .contenedorInicio{
             display: grid;
             grid-template-columns: repeat(2,1fr);
@@ -73,7 +71,32 @@
                 }
             }
  
-    
+                /*MEDIA CLIENTES*/
+                #contenedorClientes{
+                    margin-top: 5%;
+                }
+                #cardCliente{
+                        margin-left: 5%;
+                        margin-top: 10%;
+                        margin-right: 5%;
+                        display:inline-block;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 18rem;
+                        height: 18rem;
+                        h3{
+                            font-family: $typoTextos;
+                            font-size: 1rem;
+                            text-decoration: none;
+                            text-align: center;
+                            overflow: hidden;
+
+                            & a {
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                }
     
             /*MEDIA DE SERVICIOS*/
             .contenedorServicios{
@@ -243,17 +266,97 @@
                 }
             } 
             
+            /*FAQ*/
+        #preguntas{
+            background-color: $colorServicio;
+            margin-left:3% ;
+            margin-right: 3%;
+            margin-top: 2%;
+            display: inline-block;
+            justify-content: space-between center;
+            align-items: center;
+            width: 20rem;
+            height: 15rem;
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+
+            h3{
+                font-family: $typoTextos;
+                text-align: center;
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+                overflow: hidden;
+            }
+
+            p{
+                font-family: $typoTextos;
+                color: $colorGris;
+                margin-left: 5%;
+                margin-top: 5%;
+                text-align: center;
+                width: 90%;
+                height: 70%;
+            }
+        }
+        #preguntasContacto{
+            background-color: $colorServicio;
+            margin-left:0% ;
+            margin-right: 0%;
+            margin-top: 0;
+            display: inline-block;
+            justify-content: space-between center;
+            align-items: center;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            
+            p{
+                font-family: $typoTextos;
+                color: $colorGris;
+                margin-left: 5%;
+                margin-top: 5%;
+                text-align: center;
+                width: 90%;
+                height: 25%;
+            }
+            h3{
+                font-family: $typoTextos;
+                text-align: center;
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+                overflow: hidden;
+            }
+
+            h4{
+                font-family: $typoTextos;
+                color: $colorGris;
+                text-align: center;
+                width: 90%;
+                height: 10%;
+
+                a{
+                    text-decoration: none;
+                    margin: 0;
+                    color: black;
+                }
+            }
+        }
     }
 
 
-
-
-    @media(max-width:576px){
+@media(max-width:576px){
         *{
             margin:0 auto;
             width:100%;
             overflow-x: hidden; 
             
+        }
+        .titulosPaginas{
+            h2{
+                font-size: 3rem;
+            }
         }
         .contenedorInicio{
             display: grid;
@@ -340,7 +443,33 @@
             margin-bottom: 0;
         } 
         }
-       
+        /*MEDIA CLIENTES*/
+        #contenedorClientes{
+            margin-top: 5%;
+        }
+       #cardCliente{
+            margin-left: 15%;
+            margin-top: 2%;
+            margin-right: 5%;
+            display:inline-block;
+            justify-content: space-between;
+            align-items: center;
+            width: 18rem;
+            height: 18rem;
+            h3{
+                font-family: $typoTextos;
+                font-size: 1rem;
+                text-decoration: none;
+                text-align: center;
+                overflow: hidden;
+
+                & a {
+                    text-decoration: none;
+                }
+            }
+       }
+
+
         /*MEDIA DE SERVICIOS*/
     
         .contenedorServicios{
@@ -389,6 +518,82 @@
             margin-left: 5%;
         }
     
-    
-    
+        /*FAQ*/
+        #preguntas{
+            background-color: $colorServicio;
+            margin-left:5% ;
+            margin-right: 5%;
+            margin-top: 2%;
+            display: inline-block;
+            justify-content: space-between center;
+            align-items: center;
+            width: 20rem;
+            height: 15rem;
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+
+            h3{
+                font-family: $typoTextos;
+                text-align: center;
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+                overflow: hidden;
+            }
+
+            p{
+                font-family: $typoTextos;
+                color: $colorGris;
+                margin-left: 5%;
+                margin-top: 5%;
+                text-align: center;
+                width: 90%;
+                height: 70%;
+            }
+        }
+        #preguntasContacto{
+            background-color: $colorServicio;
+            margin-left:5% ;
+            margin-right: 5%;
+            margin-top: 0;
+            display: inline-block;
+            justify-content: space-between center;
+            align-items: center;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            
+            p{
+                font-family: $typoTextos;
+                color: $colorGris;
+                margin-left: 5%;
+                margin-top: 5%;
+                text-align: center;
+                width: 90%;
+                height: 25%;
+            }
+            h3{
+                font-family: $typoTextos;
+                text-align: center;
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+                overflow: hidden;
+            }
+
+            h4{
+                font-family: $typoTextos;
+                color: $colorGris;
+                text-align: center;
+                width: 90%;
+                height: 10%;
+
+                a{
+                    text-decoration: none;
+                    margin: 0;
+                    color: black;
+                }
+            }
+        }
     }
+

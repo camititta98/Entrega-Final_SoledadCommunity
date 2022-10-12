@@ -374,6 +374,44 @@ header nav {
       #preguntas p a:hover {
         color: red; }
 
+#preguntasContacto {
+  background-color: #ffdd00;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0;
+  display: inline-block;
+  justify-content: space-between center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  overflow: hidden; }
+  #preguntasContacto p {
+    font-family: "Noto Sans", sans-serif;
+    color: #535252;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: center;
+    width: 90%;
+    height: 25%; }
+  #preguntasContacto h3 {
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    overflow: hidden; }
+  #preguntasContacto h4 {
+    font-family: "Noto Sans", sans-serif;
+    color: #535252;
+    text-align: center;
+    width: 90%;
+    height: 10%; }
+    #preguntasContacto h4 a {
+      text-decoration: none;
+      margin: 0;
+      color: black; }
+
 .formulario {
   font-family: "Noto Sans", sans-serif;
   display: flex;
@@ -514,6 +552,27 @@ footer p {
     .boxVideo iframe {
       width: 100%;
       margin: 10%; }
+  /*MEDIA CLIENTES*/
+  #contenedorClientes {
+    margin-top: 5%; }
+  #cardCliente {
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-right: 5%;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+    height: 18rem; }
+    #cardCliente h3 {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1rem;
+      text-decoration: none;
+      text-align: center;
+      overflow: hidden; }
+      #cardCliente h3 a {
+        text-decoration: none;
+        color: black; }
   /*MEDIA DE SERVICIOS*/
   .contenedorServicios {
     display: grid;
@@ -635,13 +694,79 @@ footer p {
       width: 90%;
       text-align: left; }
     .reconocimiento p {
-      width: 90%; } }
+      width: 90%; }
+  /*FAQ*/
+  #preguntas {
+    background-color: #ffdd00;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+    display: inline-block;
+    justify-content: space-between center;
+    align-items: center;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem; }
+    #preguntas h3 {
+      font-family: "Noto Sans", sans-serif;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      overflow: hidden; }
+    #preguntas p {
+      font-family: "Noto Sans", sans-serif;
+      color: #535252;
+      margin-left: 5%;
+      margin-top: 5%;
+      text-align: center;
+      width: 90%;
+      height: 70%; }
+  #preguntasContacto {
+    background-color: #ffdd00;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0;
+    display: inline-block;
+    justify-content: space-between center;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden; }
+    #preguntasContacto p {
+      font-family: "Noto Sans", sans-serif;
+      color: #535252;
+      margin-left: 5%;
+      margin-top: 5%;
+      text-align: center;
+      width: 90%;
+      height: 25%; }
+    #preguntasContacto h3 {
+      font-family: "Noto Sans", sans-serif;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      overflow: hidden; }
+    #preguntasContacto h4 {
+      font-family: "Noto Sans", sans-serif;
+      color: #535252;
+      text-align: center;
+      width: 90%;
+      height: 10%; }
+      #preguntasContacto h4 a {
+        text-decoration: none;
+        margin: 0;
+        color: black; } }
 
 @media (max-width: 576px) {
   * {
     margin: 0 auto;
     width: 100%;
     overflow-x: hidden; }
+  .titulosPaginas h2 {
+    font-size: 3rem; }
   .contenedorInicio {
     display: grid;
     grid-template-rows: 8rem 15rem 25rem 12rem 18rem 15rem;
@@ -699,6 +824,26 @@ footer p {
       height: 80%;
       margin-top: 0;
       margin-bottom: 0; }
+  /*MEDIA CLIENTES*/
+  #contenedorClientes {
+    margin-top: 5%; }
+  #cardCliente {
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-right: 5%;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+    height: 18rem; }
+    #cardCliente h3 {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1rem;
+      text-decoration: none;
+      text-align: center;
+      overflow: hidden; }
+      #cardCliente h3 a {
+        text-decoration: none; }
   /*MEDIA DE SERVICIOS*/
   .contenedorServicios {
     display: grid;
@@ -729,4 +874,68 @@ footer p {
   .servicioSV {
     width: 90%;
     height: 90%;
-    margin-left: 5%; } }
+    margin-left: 5%; }
+  /*FAQ*/
+  #preguntas {
+    background-color: #ffdd00;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    display: inline-block;
+    justify-content: space-between center;
+    align-items: center;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem; }
+    #preguntas h3 {
+      font-family: "Noto Sans", sans-serif;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      overflow: hidden; }
+    #preguntas p {
+      font-family: "Noto Sans", sans-serif;
+      color: #535252;
+      margin-left: 5%;
+      margin-top: 5%;
+      text-align: center;
+      width: 90%;
+      height: 70%; }
+  #preguntasContacto {
+    background-color: #ffdd00;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+    display: inline-block;
+    justify-content: space-between center;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden; }
+    #preguntasContacto p {
+      font-family: "Noto Sans", sans-serif;
+      color: #535252;
+      margin-left: 5%;
+      margin-top: 5%;
+      text-align: center;
+      width: 90%;
+      height: 25%; }
+    #preguntasContacto h3 {
+      font-family: "Noto Sans", sans-serif;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      overflow: hidden; }
+    #preguntasContacto h4 {
+      font-family: "Noto Sans", sans-serif;
+      color: #535252;
+      text-align: center;
+      width: 90%;
+      height: 10%; }
+      #preguntasContacto h4 a {
+        text-decoration: none;
+        margin: 0;
+        color: black; } }
