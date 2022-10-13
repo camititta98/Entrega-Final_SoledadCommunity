@@ -13,19 +13,10 @@
 
 .servicioIG{
     grid-area:servicioIG;
+    @extend .bloquesServicio;
     overflow: hidden;
-
     background-color: $colorServicio;
-    margin-left: 3rem;
-    margin-top: 0em;
-    margin-right: 2em;
-    display:inline-block;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 2em;
-    margin-bottom: 1em;
     font-family: $typoTextos;
-    font-size: 1rem;
     color: $colorGris;
     @include anchoAlto(90%,12rem);
 
@@ -45,17 +36,9 @@
 
 .servicioFB{
     grid-area:servicioFB;
+    @extend .bloquesServicio;
     background-color: $colorServicio;
-    margin-left: 3rem;
-    margin-top: 0em;
-    margin-right: 2em;
-    display:inline-block;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 2em;
-    margin-bottom: 1em;
     font-family: $typoTextos;
-    font-size: 1rem;
     color: $colorGris;
     @include anchoAlto(88%,90%);
 
@@ -75,16 +58,8 @@
 .servicioSV{
     grid-area:servicioSV;
     background-color: $colorServicio;
-    margin-left: 3rem;
-    margin-top: 0em;
-    margin-right: 2em;
-    display:inline-block;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 2em;
-    margin-bottom: 1em;
+    @extend .bloquesServicio;
     font-family: $typoTextos;
-    font-size: 1rem;
     color: $colorGris;
     @include anchoAlto(90%,90%);
 
@@ -104,17 +79,11 @@
 
 .comunidad{
     grid-area:comunidad ;
+    display:inline-block;
+    @extend .bloquesServ;
     overflow: hidden;
     background-color: $colorServicio;
-    margin-top: 0em;
-    margin-right: 2em;
-    display:inline-block;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 2em;
-    margin-bottom: 1em;
     font-family: $typoTextos;
-    font-size: 1rem;
     color: $colorGris;
     @include anchoAlto(90%,12rem);
 
@@ -137,16 +106,8 @@
     overflow: hidden;
     width: 100%;
     background-color: $colorServicio;
-    margin-left: 3rem;
-    margin-top: 0em;
-    margin-right: 2em;
-    display:inline-block;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 2em;
-    margin-bottom: 1em;
+    @extend .bloquesServicio;
     font-family: $typoTextos;
-    font-size: 1rem;
     @include anchoAlto(85%,12rem);
 
     h3{
@@ -167,17 +128,12 @@
     grid-area:reconocimiento;
     overflow: hidden;
     background-color: $colorServicio;
-    margin-top: 0em;
-    margin-right: 2em;
-    display:inline-block;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 2em;
-    margin-bottom: 1em;
+    @extend .bloquesServ;
     font-family: $typoTextos;
-    font-size: 1rem;
     color: $colorGris;
     @include anchoAlto(90%,24rem);
+
+    
 
     h3{
         overflow: hidden;

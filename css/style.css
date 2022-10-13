@@ -160,16 +160,7 @@ header nav {
   grid-area: servicioIG;
   overflow: hidden;
   background-color: #ffdd00;
-  margin-left: 3rem;
-  margin-top: 0em;
-  margin-right: 2em;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 2em;
-  margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
   color: #535252;
   width: 90%;
   height: 12rem; }
@@ -185,16 +176,7 @@ header nav {
 .servicioFB {
   grid-area: servicioFB;
   background-color: #ffdd00;
-  margin-left: 3rem;
-  margin-top: 0em;
-  margin-right: 2em;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 2em;
-  margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
   color: #535252;
   width: 88%;
   height: 90%; }
@@ -209,16 +191,7 @@ header nav {
 .servicioSV {
   grid-area: servicioSV;
   background-color: #ffdd00;
-  margin-left: 3rem;
-  margin-top: 0em;
-  margin-right: 2em;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 2em;
-  margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
   color: #535252;
   width: 90%;
   height: 90%; }
@@ -234,17 +207,10 @@ header nav {
 
 .comunidad {
   grid-area: comunidad;
+  display: inline-block;
   overflow: hidden;
   background-color: #ffdd00;
-  margin-top: 0em;
-  margin-right: 2em;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 2em;
-  margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
   color: #535252;
   width: 90%;
   height: 12rem; }
@@ -262,16 +228,7 @@ header nav {
   overflow: hidden;
   width: 100%;
   background-color: #ffdd00;
-  margin-left: 3rem;
-  margin-top: 0em;
-  margin-right: 2em;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 2em;
-  margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
   width: 85%;
   height: 12rem; }
   .ventas h3 {
@@ -288,15 +245,7 @@ header nav {
   grid-area: reconocimiento;
   overflow: hidden;
   background-color: #ffdd00;
-  margin-top: 0em;
-  margin-right: 2em;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 2em;
-  margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
-  font-size: 1rem;
   color: #535252;
   width: 90%;
   height: 24rem; }
@@ -943,3 +892,24 @@ footer p {
         text-decoration: none;
         margin: 0;
         color: black; } }
+
+.bloquesServicio, .servicioIG, .servicioFB, .servicioSV, .ventas {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-left: 3rem;
+  margin-top: 0rem;
+  margin-right: 2rem; }
+
+.bloquesServ, .comunidad, .reconocimiento {
+  margin-top: 0em;
+  margin-right: 2em;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2em;
+  margin-bottom: 1em;
+  font-size: 1rem; }
