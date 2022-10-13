@@ -3,3 +3,11 @@
     width: $width;
     height: $height;
 }
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    @include anchoAlto (20px,20px);
+}

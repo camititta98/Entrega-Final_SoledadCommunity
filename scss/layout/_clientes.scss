@@ -9,13 +9,11 @@
     display:inline-block;
     justify-content: space-between;
     align-items: center;
-    width: 18em;
-    height: 18em;
+    @include anchoAlto(18rem,18rem);
     margin-bottom: 1em;
 
     img {
-        width: 16em;
-        height: 16em;
+        @include anchoAlto(16rem,16rem);
         overflow: hidden;
         
     }

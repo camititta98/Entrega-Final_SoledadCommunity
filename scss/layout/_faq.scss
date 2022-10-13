@@ -6,10 +6,9 @@
     display:inline-block;
     justify-content: space-between;
     align-items: center;
-    width: 20em;
-    height: 18em;
     border-radius: 2em;
     margin-bottom: 1em;
+    @include anchoAlto(20rem,18rem);
     
     h3{
         font-family: $typoTextos;
@@ -44,11 +43,10 @@
     display: inline-block;
     justify-content: space-between center;
     align-items: center;
-    width: 20rem;
-    height: 20rem;
     border-radius: 2rem;
     margin-bottom: 1rem;
     overflow: hidden;
+    @include anchoAlto(20rem,20rem);
     
     p{
         font-family: $typoTextos;
@@ -56,8 +54,7 @@
         margin-left: 5%;
         margin-top: 5%;
         text-align: center;
-        width: 90%;
-        height: 25%;
+        @include anchoAlto(90%,25%);
     }
     h3{
         font-family: $typoTextos;
@@ -71,8 +68,7 @@
         font-family: $typoTextos;
         color: $colorGris;
         text-align: center;
-        width: 90%;
-        height: 10%;
+        @include anchoAlto(90%,10%);
 
         a{
             text-decoration: none;

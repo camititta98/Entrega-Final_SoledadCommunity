@@ -5,6 +5,10 @@
   width: 100%;
   overflow-x: hidden; }
 
+.box {
+  width: 20px;
+  height: 20px; }
+
 .navbar {
   height: auto;
   width: auto; }
@@ -76,22 +80,22 @@ header nav {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   text-align: center;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.768); }
+  background-color: rgba(255, 255, 255, 0.768);
+  width: 100%;
+  height: 100%; }
   .boxInicio p {
     margin-top: 2rem;
     text-align: justify;
     margin-left: 1rem;
-    height: 90%;
-    width: 90%; }
+    width: 90%;
+    height: 90%; }
 
 .boxImagen {
   grid-area: imagen;
-  height: 95%;
+  overflow: hidden;
   width: 90%;
-  overflow: hidden; }
+  height: 95%; }
   .boxImagen img {
     border-radius: 1rem;
     margin-top: 1rem; }
@@ -109,16 +113,16 @@ header nav {
     font-size: 1rem;
     text-align: justify;
     margin-top: 10%;
-    height: 100%;
-    width: 90%; }
+    width: 90%;
+    height: 100%; }
 
 .boxContacto {
   background-color: rgba(251, 255, 0, 0.527);
   border-radius: 1em;
   grid-area: contacto;
-  height: 18rem;
   margin-top: 2em;
-  width: 20rem; }
+  width: 20rem;
+  height: 18rem; }
   .boxContacto p {
     font-family: "Noto Sans", sans-serif;
     font-size: 2rem;
@@ -162,13 +166,13 @@ header nav {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  height: 12em;
   border-radius: 2em;
   margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
-  color: #535252; }
+  color: #535252;
+  width: 90%;
+  height: 12rem; }
   .servicioIG h3 {
     overflow: hidden;
     margin-left: 1em;
@@ -187,13 +191,13 @@ header nav {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
-  width: 88%;
-  height: 90%;
   border-radius: 2em;
   margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
-  color: #535252; }
+  color: #535252;
+  width: 88%;
+  height: 90%; }
   .servicioFB h3 {
     overflow: hidden;
     margin-left: 1em;
@@ -211,13 +215,13 @@ header nav {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  height: 90%;
   border-radius: 2em;
   margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
-  color: #535252; }
+  color: #535252;
+  width: 90%;
+  height: 90%; }
   .servicioSV h3 {
     overflow: hidden;
     margin-left: 1em;
@@ -237,13 +241,13 @@ header nav {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  height: 12em;
   border-radius: 2em;
   margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
-  color: #535252; }
+  color: #535252;
+  width: 90%;
+  height: 12rem; }
   .comunidad p {
     margin-left: 1rem;
     width: 90%; }
@@ -264,12 +268,12 @@ header nav {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
-  height: 12em;
   border-radius: 2em;
   margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  width: 85%;
+  height: 12rem; }
   .ventas h3 {
     overflow: hidden;
     margin-left: 1em;
@@ -289,13 +293,13 @@ header nav {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  height: 24em;
   border-radius: 2em;
   margin-bottom: 1em;
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
-  color: #535252; }
+  color: #535252;
+  width: 90%;
+  height: 24rem; }
   .reconocimiento h3 {
     overflow: hidden;
     margin-left: 1em;
@@ -328,12 +332,12 @@ header nav {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
-  width: 18em;
-  height: 18em;
+  width: 18rem;
+  height: 18rem;
   margin-bottom: 1em; }
   #cardCliente img {
-    width: 16em;
-    height: 16em;
+    width: 16rem;
+    height: 16rem;
     overflow: hidden; }
   #cardCliente h3 {
     font-family: 'Noto Sans', sans-serif;
@@ -352,10 +356,10 @@ header nav {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
-  width: 20em;
-  height: 18em;
   border-radius: 2em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  width: 20rem;
+  height: 18rem; }
   #preguntas h3 {
     font-family: "Noto Sans", sans-serif;
     text-align: center;
@@ -382,11 +386,11 @@ header nav {
   display: inline-block;
   justify-content: space-between center;
   align-items: center;
-  width: 20rem;
-  height: 20rem;
   border-radius: 2rem;
   margin-bottom: 1rem;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem; }
   #preguntasContacto p {
     font-family: "Noto Sans", sans-serif;
     color: #535252;
@@ -488,8 +492,8 @@ header nav {
     background: radial-gradient(circle, #f6f769 35%, #fb9216 100%);
     justify-items: baseline;
     border-radius: 5em;
-    height: 3.5em;
-    width: 3.5em; }
+    width: 3.5rem;
+    height: 3.5rem; }
     #rrss a:hover {
       transform: scale(1.2, 1.2); }
     #rrss a svg {
